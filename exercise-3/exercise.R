@@ -34,9 +34,11 @@ round.sum <- round(raw.sum, 1)
 
 # Create two new variables `round.1` and `round.2` that are your `fav.1` and `fav.2` variables rounded
 # to 1 decimal place
-round.1 <- round(raw.sum, 1)
+round.1 <- round(fav.1, 1)
+round.2 <- round(fav.2, 1)
 
 # Create a variable `sum.round` that is the sum of the rounded values
-
+sum.round <- sum(round.1, round.2)
 
 # Which is bigger, `round.sum` or `sum.round`? (You can use the `max()` function!)
+max(sum.round, sum.round)
